@@ -40,20 +40,44 @@
 }
 .sidebar{
     float: left;
-    border: 1px solid red;
     width: 160px;
+}
+.nav-menu{
+    list-style-type: none; /* Убираем маркеры */
+}
+.nav-menu__icon{
+    display: inline-block; /* Строчно-блочный элемент */
+}
+.nav-menu__text{
+   display: inline-block; /* Строчно-блочный элемент */    
 }
 
 .main-content{
     float: right;
-    border: 1px solid red;
     width: 880px;
 }
 .page-text{
     width: 700px;
 }
-
-
+.description{
+    background-color: #1c5bc3;
+    height: 115px;
+    width: 600px;
+    color: white;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 70px;
+}
+.partners{
+    width: 700px;
+}
+.partners-list{
+    list-style-type: none; /* Убираем маркеры */    
+}
+.partners-item{
+    float: left;
+    margin-right: 50px;
+}
 
 /*footer*/
 .footer {
@@ -61,6 +85,7 @@
     height: 76px;    
 }
 .author{
+    display: inline; /* Отображать как строчный элемент */
     float: left;
     margin-left: 20px;
     margin-top: 10px;
@@ -69,19 +94,28 @@
 }
 /*центровка логотипа в footer*/
 .footer-logo{
+   display: inline-block; /* Строчно-блочный элемент */
     width: 120px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
 }
 .sociale{
+    display: inline-block; /* Строчно-блочный элемент */
     float: right;
+    margin-top: 10px;
     margin-right: 20px;
-    border: 1px dotted white;
+    color: white;
+    width: 180px;
+}
+
+.social-text{   
 }
 .sociale-list{
     list-style-type: none; /* Убираем маркеры */
+    margin-top: 0; /*очевидно где-то произошло наследование? обнуляем*/
+    border: 1px dotted white;
 }
 .social-item{
-    display: inline; /* Отображать как строчный элемент */
+   display: inline; /* Отображать как строчный элемент */
 }
