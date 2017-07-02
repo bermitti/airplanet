@@ -1,0 +1,51 @@
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*ширина основного контейнера*/
+.wrapper{
+    width: 1100px;
+}
+
+.header {
+    background-color: #1c5bc3;
+    padding: 20px 20px;
+    height: 36px;
+}
+/*логотип в шапке*/
+.logo{
+    width: 120px;
+    height: 36px;
+    float: left;
+}
+/*контакты в шапке*/
+.contacts{
+    width: 180px;  
+    color: white;  /*цвет шрифта*/ 
+    float: right;
+}
+.contact__phone{
+    float: right;
+}
+.contact__schedule{
+    float: right;
+}
+
+/*section*/
+.page{
+    width: 1060px;
+    margin:0 20px;
+}
+.sidebar{
+    float: left;
+    border: 1px solid red;
+    width: 160px;
+}
+
+.main-content{
+    float: right;
+    border: 1px solid red;
+    width: 880px;
+}
