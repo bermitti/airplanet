@@ -85,7 +85,6 @@
     height: 76px;    
 }
 .author{
-    display: inline; /* Отображать как строчный элемент */
     float: left;
     margin-left: 20px;
     margin-top: 10px;
@@ -94,14 +93,12 @@
 }
 /*центровка логотипа в footer*/
 .footer-logo{
-   display: inline-block; /* Строчно-блочный элемент */
+    float: left;
     width: 120px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 200px;
     margin-top: 20px;
 }
 .sociale{
-    display: inline-block; /* Строчно-блочный элемент */
     float: right;
     margin-top: 10px;
     margin-right: 20px;
@@ -109,12 +106,8 @@
     width: 180px;
 }
 
-.social-text{   
-}
 .sociale-list{
     list-style-type: none; /* Убираем маркеры */
-    margin-top: 0; /*очевидно где-то произошло наследование? обнуляем*/
-    border: 1px dotted white;
 }
 .social-item{
    display: inline; /* Отображать как строчный элемент */

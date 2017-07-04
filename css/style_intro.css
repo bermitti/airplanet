@@ -1,14 +1,15 @@
 .conteiner{
-    background: url(../img/bg/introfon.jpg) no-repeat;/* Путь к фоновому изображению */
-    background-size: 100%;
+    background: url(../img/bg/kzhhnb6xsqi-margo-brodowicz.png) no-repeat;/* Путь к фоновому изображению */
+    height: 650px;
+    width: 1100px;
 }
+
 .logo{
-    
+    margin-left: 494px;
+    margin-top: 189px; 
 }
 
-
-/*что тут написано?*/
-/*.conteiner{
-    background: #000000 url(../img/bg/introfon.jpg) no-repeat 50% 3px;
-    background-size: 1122px auto;
-}*/
+.button{
+    margin-left: 448px;
+    margin-top: 42px;
+}
