@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Airplanet</title>
-    <link rel="stylesheet" href="css/airplanet.css"
+    <link rel="stylesheet" href="css/airplanet.css">
+    <!--нормалайзер стилей для браузера от Насти-->
+    <link rel="stylesheet" href="ccs/normalize.css">
 </head>
 
 <body>
@@ -15,7 +17,9 @@
             <img src="img\icons\logo.png" alt="logo" class="logo">
             <div class="contacts">
                 <div class="contact__phone">8 (800) 00-392-10</div>
-                <div class="contact__schedule">График работы</div>
+                <div class="contact__schedule">
+                    <a href="#" class="header__schedule-href" >График работы</a>
+                </div>
             </div>
         </header>
 
@@ -30,7 +34,7 @@
                                 <div class="nav-menu__icon">
                                     <img src="img\icons\main_icon.png" alt="">
                                 </div>
-                                <div class="nav-menu__text">
+                                <div class="nav-menu__text nav-menu__home">
                                     Главная
                                 </div>
                             </a>
@@ -65,7 +69,9 @@
                 <!--картинка в шапке на странице-->
                 <div class="page-image">
                     <img src="img/bg/fikd9t5_5zq-dominik-schroder.jpg" alt="" class="page-image__picture">
-                    <div class="page-image__text">О компании</div>
+                    <div class="page-image__text">
+                        <h1>О компании</h1>
+                    </div>
                 </div>
 
                 <!--текст на странице-->
@@ -100,7 +106,7 @@
                     </p>
                 </div>
                 <div class="description">
-                    Бронировать билеты в нашей авиакомпании удобно. Для этого можно <a href="#">оставить заявку</a> на сайте или же позвонить по номеру круглосуточной поддержки 8 (800) 00-392-10.
+                    Бронировать билеты в нашей авиакомпании удобно. Для этого можно оставить <a href="#" class="main-content__order">заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки 8 (800) 00-392-10.
                 </div>
                 <div class="partners">
                     <h2 class="partners-title">Партнёры</h2>
@@ -144,17 +150,17 @@
         <footer class="footer clearfix">
             <div class="author">
                 Сделано с любовью и старанием<br>
-                на курсе «HTML + CSS» в <a class="author-school" href="#">LoftSchool</a>.<br>
-                Автор работы: <a class="author-link" href="#">Прохладов Вадим</a>
+                на курсе «HTML + CSS» в <a class="footer__author-school" href="#">LoftSchool</a>.<br>
+                Автор работы: <a class="footer__author-link" href="#">Прохладов Вадим</a>
             </div>
             <div class="footer-logo">
                 <img src="img\icons\logo.png" alt="logo">
             </div>
-            <div class="sociale">
+            <div class="social">
                 <div class="social-text">Наши социальные сети</div>
-                <ul class="sociale-list">
-                    <li class="sociale-item">
-                        <a class="sociale-link" href="#">
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a class="social-link" href="#">
                             <img src="img\icons\vk.png" alt="ВК">
                         </a>
                     </li>

@@ -1,6 +1,6 @@
-.clearfix::after{
+.clearfix:after{
     content: "";
-    display: table;
+    display: block;
     clear: both;
 }
 
@@ -32,12 +32,20 @@
 .contact__schedule{
     float: right;
 }
+/*Задаём белый цвет ссылкам*/
+.header__schedule-href, 
+.main-content__order,
+.footer__author-school,
+.footer__author-link{
+    color: white;
+}
 
 /*section*/
 .page{
     width: 1060px;
-    margin:0 20px;
+    margin: 0 20px;
 }
+/*сайдбар, боковая панель навигации*/
 .sidebar{
     float: left;
     width: 160px;
@@ -45,38 +53,62 @@
 .nav-menu{
     list-style-type: none; /* Убираем маркеры */
 }
+.nav-menu__item{
+    margin-top: 30px; 
+}
 .nav-menu__icon{
     display: inline-block; /* Строчно-блочный элемент */
+    vertical-align: middle;/* Выравнивание по средней линии родителя */
 }
 .nav-menu__text{
-   display: inline-block; /* Строчно-блочный элемент */    
+    display: inline-block; /* Строчно-блочный элемент */ 
+    vertical-align: middle;/* Выравнивание по средней линии родителя */
+    margin-left: 16px;
+    color: #1c5bc3;      /* Цвет для текста бокового меню */ 
+}
+
+div.nav-menu__home{
+    color: #221f1f; /* Переопределили цвет для Главная */ 
 }
 
 .main-content{
     float: right;
     width: 880px;
 }
+/*текст на картинке на основной странице*/
+.page-image__text{
+    position: absolute; /* Абсолютное позиционирование */
+    top: 236px; /* Положение от нижнего края */
+    left: 270px; /* Положение от правого края */
+}
 .page-text{
     width: 700px;
 }
+/*ширина блока с учётом padding, вариант - box-sizing: border-box */
 .description{
     background-color: #1c5bc3;
-    height: 115px;
+    height: 116px;
     width: 600px;
     color: white;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 30px;
     padding-right: 70px;
 }
 .partners{
+    height: 420px;
     width: 700px;
+}
+.partners-title{
+    margin-top: 72px;
 }
 .partners-list{
     list-style-type: none; /* Убираем маркеры */    
 }
 .partners-item{
-    float: left;
-    margin-right: 50px;
+    /*float: left;*/
+    margin-right: 60px;
+    display: inline-block; /* Строчно-блочный элемент */ 
+    vertical-align: middle;/* Выравнивание по средней линии родителя */
 }
 
 /*footer*/
@@ -98,16 +130,18 @@
     margin-left: 200px;
     margin-top: 20px;
 }
-.sociale{
+.social{
     float: right;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 20px;
     color: white;
     width: 180px;
 }
 
-.sociale-list{
+.social-list{
     list-style-type: none; /* Убираем маркеры */
+    padding-left: 0;
+    margin-top: 3px; 
 }
 .social-item{
    display: inline; /* Отображать как строчный элемент */
