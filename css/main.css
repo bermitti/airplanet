@@ -1,21 +1,14 @@
-@font-face{
-    font-family: Roboto;
-    src: url(../fonts/Roboto-Bold_1.ttf);
-    font-weight: 700;
-    font-style: normal;
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
 }
-@font-face{
-    font-family: Roboto;
-    src: url(../fonts/Roboto-Light_1.ttf);
-    font-weight: 300;
-    font-style: normal;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-@font-face{
-    font-family: Roboto;
-    src: url(../fonts/Roboto-LightItalic_1.ttf);
-    font-weight: 300;
-    font-style: italic;
-}
+
 /*задаём шрифты элементам и классам*/
 .comments__name{
     font-weight: 700;
@@ -32,17 +25,6 @@ body{
     font-family: Roboto;
     font-weight: 300;
     font-style: normal;
-}
-
-.clearfix:after{
-    content: "";
-    display: block;
-    clear: both;
-}
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 /*важно для прибивки футера и растягивания wrapper*/
@@ -74,8 +56,6 @@ footer{
 }
 
 /*Задаём белый цвет ссылкам*/
-.header__schedule-href, 
-.main-content__order,
 .footer__author-school,
 .footer__author-link{
     color: white;
@@ -89,6 +69,7 @@ footer{
 }
 /*логотип в шапке*/
 .logo{
+    display: block;
     width: 120px;
     height: 36px;
     float: left;
@@ -97,20 +78,22 @@ footer{
 .contacts{
     width: 180px;  
     float: right;
+    text-align: right;
 }
 .contact__phone{
     color: white;  /*цвет шрифта*/ 
     display: block;
-    text-align: right;
     font-size: 21px;
     text-decoration: none;
 }
 .contact__schedule{
     color: white;  /*цвет шрифта*/ 
-    display: block;
-    text-align: right;
+    display: inline-block;
     font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
 }
+
 /*сайдбар, боковая панель навигации*/
 .sidebar{
     float: left;
@@ -125,8 +108,13 @@ footer{
     margin-top: 30px; 
     font-size: 0; /*обнуляем отступы для inline-block*/
 }
+.nav-menu__link{
+    display: inline-block; /* обернули весь элемент в ссылку */
+}
 .nav-menu__icon{
     display: inline-block; /* Строчно-блочный элемент */
+    width: 25px;
+    height: 20px;
     vertical-align: middle;/* Выравнивание по средней линии родителя */
 }
 .nav-menu__text{
@@ -145,55 +133,6 @@ div.nav-menu__home{
 .main-content{
     float: right;
     width: 880px;
-}
-/*текст на картинке на основной странице*/
-.page-image{
-    position: relative;
-}
-.page-image__text{
-    position: absolute; /* Абсолютное позиционирование */
-    top: 162px; /* Положение от нижнего края */
-    left: 70px; /* Положение от правого края */
-}
-.page-text{
-    width: 700px;
-}
-/*ширина блока с учётом padding, вариант - box-sizing: border-box */
-.description{
-    background-color: #1c5bc3;
-    height: 116px;
-    width: 700px;
-    color: white;
-    padding-top: 20px;
-    padding-left: 30px;
-    padding-right: 70px;
-}
-.partners{
-    height: 420px;
-    width: 700px;
-}
-.partners-title{
-    margin-top: 72px;
-}
-.partners-list{
-    list-style-type: none; /* Убираем маркеры */ 
-    text-align: left;
-    border: 1px dotted green; /* учебная рамка */
-    padding: 0; 
-}
-.partners-item{
-    /*float: left;*/
-    width: 168px; /* Задание ширины логотипа партнёра */ 
-    margin-right: 93px;
-    margin-bottom: 50px;
-    display: inline-block; /* Строчно-блочный элемент */ 
-    vertical-align: middle;/* Выравнивание по средней линии родителя */
-    text-align: center;
-    border: 1px dotted red; /* учебная рамка */
-}
-
-.partners-list li:nth-child(3n){
-    margin-right: 0; /* убираем отступ у каждого 3-его логотипа партнёра */ 
 }
 
 /*footer*/
@@ -227,5 +166,8 @@ div.nav-menu__home{
 }
 .social-item{
    display: inline; /* Отображать как строчный элемент */
-   margin-right: 8px;
+   padding-right: 8px;
+}
+.social-link{
+    display: inline-block; /* обернули весь элемент в ссылку */
 }

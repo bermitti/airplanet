@@ -1,0 +1,28 @@
+/*хлебные крошки*/
+.breadcrumbs{
+    padding-top: 46px;
+    padding-bottom: 30px;
+}
+.bread__list{
+    list-style: none;
+}
+.bread__item{
+    display: inline-block;
+    vertical-align: center;
+}
+.bread__item:after{
+    content: "/";
+}
+.bread__link{
+    font-size: 14px;
+    color: #1c5bc3;
+    display: inline-block;
+}
+/*модификатор*/
+.bread__item_last:after{
+    display: none;
+}
+.bread__item_last .bread__link{
+    color: #221f1f;
+    text-decoration: none;
+}

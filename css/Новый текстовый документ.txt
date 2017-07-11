@@ -1,0 +1,15 @@
+main.css
+normalize.css
+   folders
+ - components
+ - layout
+     fonts.css
+     base.css
+
+
+
+-advenced new file   расширение для создания файлов
+
+настройки шрифта
+общие настройки для всего лейаута
+стилизация различных элементов

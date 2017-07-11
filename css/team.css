@@ -1,0 +1,27 @@
+
+
+.team__list{
+    list-style: none;
+}
+.team__item{
+    width: 290px; /* Задание ширины логотипа партнёра */ 
+    display: inline-block; /* Строчно-блочный элемент */ 
+    text-align: center;
+    vertical-align: top;
+    padding-right: 40px;
+    /*border: 1px dotted red;  учебная рамка */
+}
+.team__item_padding1{
+    padding-bottom: 70px;
+}
+.team__item_padding2{
+    padding-bottom: 110px;
+}
+.team__name{
+    font-weight: 700;
+}
+.team__position{
+    color: #1c5bc3;
+    padding-top: 10px;
+    padding-bottom: 13px;
+}

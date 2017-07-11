@@ -1,0 +1,17 @@
+
+
+.wrapper{
+    background: url(../../img/bg/kzhhnb6xsqi-margo-brodowicz.png) no-repeat;
+    background-size: 100%;
+}
+.intro-logo{
+    display: block;
+    margin-left: 494px;
+    margin-top: 189px; 
+}
+
+.intro-button{
+    display: inline-block;
+    margin-left: 448px;
+    margin-top: 42px;
+}

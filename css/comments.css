@@ -1,0 +1,234 @@
+
+
+
+
+/*хлебные крошки*/
+.breadcrumbs{
+    padding-top: 46px;
+    padding-bottom: 30px;
+}
+.bread__list{
+    list-style: none;
+}
+.bread__item{
+    display: inline-block;
+    vertical-align: center;
+}
+.bread__item:after{
+    content: "/";
+}
+.bread__link{
+    font-size: 14px;
+    color: #1c5bc3;
+    display: inline-block;
+}
+/*модификатор*/
+.bread__item_last:after{
+    display: none;
+}
+.bread__item_last .bread__link{
+    color: #221f1f;
+    text-decoration: none;
+}
+
+/*отзывы*/
+.comments__title{
+    margin-bottom: 50px;
+    font-size: 49px;
+}
+.comments__list{
+    list-style: none;
+}
+/*отступы между датой и отзывом*/
+.comments__name{
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.comments{
+    width: 880px;
+}
+
+/*блок отзывов*/
+.comments__item{
+    font-size: 0;
+    padding-bottom: 60px;
+}
+/*фото отзыва*/
+.comments__photo{
+    width: 160px;
+    margin-right: 20px;
+    display: inline-block;
+}
+/*текст отзыва*/
+.comments__description{
+    width: 700px;
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: top;
+}
+
+
+/*навигация по страницам отзывов*/
+.nav-page{
+    padding-left: 219px;
+    padding-top: 46px;
+    padding-bottom: 69px;
+}
+.nav-page__description{
+    color: #656464;
+    display: inline-block;
+}
+.nav-page__list{
+    display: inline-block;
+    list-style: none;
+}
+.nav-page__item{
+    display: inline-block;
+    vertical-align: center;
+}
+.nav-page__item:first-child{
+    background-image: url(../img/icons/RoundedRectangle2.png);
+}
+.nav-page__link{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    height: 25px;
+    width: 25px;
+}
+.nav-page__list:before{
+    content: "<";
+    color: #656464;
+}
+.nav-page__list:after{
+    content: ">";
+    color: black;
+}
+
+/*форма для отзывов*/
+
+.form {
+  width: 700px;
+  background: #f5f5f5;
+  border-radius: 3px;
+  padding: 45px 70px;
+  margin-bottom: 72px;
+}
+
+.form__title {
+  font-size: 49px;
+  font-weight: bold;
+  color: #221f1f;
+  margin-bottom: 25px;
+}
+
+.form__row {
+  margin-bottom: 20px;
+}
+
+.form__cell {
+  display: block;
+  float: left;
+  width: 270px;
+}
+
+.form__cell:first-child {
+  margin-right: 20px;
+}
+
+.form__field-title {
+  color: #221f1f;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.form__input-text {
+  width: 100%;
+  height: 45px;
+  padding: 13px 10px;
+  font-size: 14px;
+  font-weight: 300px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.form__input-text::-webkit-input-placeholder {
+  color:#221f1f;
+}
+
+.form__input-text::-moz-placeholder {
+  color:#221f1f;
+}
+
+.form__input-text:focus {
+  border-color: #1c5bc3;
+  outline: none;
+}
+
+.form__textarea {
+  height: 90px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  resize: none;
+  font-size: 14px;
+}
+
+.form__radio-elem {
+  display: inline-block;
+  vertical-align: middle;
+  display: none;
+}
+
+.form__radio-elem:checked+.form__radio-fake {
+  border: 1px solid #1c5bc3;
+}
+
+.form__radio-elem:checked + .form__radio-fake:after {
+  display: block;
+} 
+
+.form__radio-elem:checked+.form__radio-fake+.form__radio-text {
+  /*color: blue;*/
+  font-weight: bold;
+}
+
+.form__radio-fake {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #cbcbcb;
+  position: relative;
+  background: -webkit-linear-gradient(top, #fdfdfd 0%, #efefef 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fdfdfd 0%, #efefef 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.form__radio-fake:after {
+  content: "";
+  display: none;
+  width: 8px;
+  height: 8px;
+  background: #1c5bc3;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.form__radio-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.form__controls-left, .form__controls-right {
+  float: left;
+  width: 50%;
+}
+
+.form__submit {
+  display: inline-block;
+}
