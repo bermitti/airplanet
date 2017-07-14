@@ -26,7 +26,17 @@
                 </a>    
                 <div class="contacts">
                     <a href="tel:88000039210" class="contact__phone">8 (800) 00-392-10</a>
-                    <a href="#" class="contact__schedule" >График работы</a>
+                    <div class="contact__elem">
+                        <a href="#" class="contact__schedule" >График работы</a>
+                        <div class="contacts__dropdown">
+                            <div class="contacts__time">
+                            пн-вс: 09:00 - 20:00
+                            </div>
+                            <div class="contacts__lunch">
+                            обед: 14:00-14:30
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -60,7 +70,7 @@
                                 </a>
                             </li>
                             <li class="nav-menu__item">
-                                <a href="comments.html" class="nav-menu__link">
+                                <a href="comments.html" class="nav-menu__link nav-menu__active">
                                     <div class="nav-menu__icon">
                                         <img src="img\icons\comments_feed_icon.png" alt="">
                                     </div>
@@ -78,12 +88,12 @@
 
                  <!--хлебные крошки-->
                  <div class="breadcrumbs">
-                     <ul class="bread__list">
-                         <li class="bread__item">
-                             <a href="airplanet.html" class="bread__link">Главная</a>
+                     <ul class="breadcrumbs__list">
+                         <li class="breadcrumbs__item">
+                             <a href="airplanet.html" class="breadcrumbs__link">Главная</a>
                          </li>
-                         <li class="bread__item bread__item_last">
-                             <a href="#" class="bread__link">Отзывы</a>
+                         <li class="breadcrumbs__item breadcrumbs__item_last">
+                             <a href="#" class="breadcrumbs__link">Отзывы</a>
                          </li>
                      </ul>
                  </div>
@@ -159,9 +169,7 @@
 
                  <!--форма для отзывов-->
                  <div class="form">
-                     <div class="form__title">
-                         Оставить отзыв
-                     </div>
+                     <h2 class="form__title">Оставить отзыв</h2>
                      <div class="form__fields">
                          <form class="form__elem" method="post">
                             <div class="form__row clearfix">
@@ -188,26 +196,26 @@
                             </div>
                             <div class="form__btns">
                                 <div class="form__controls">
-                                <div class="form__controls-title">
-                                    Отображать фото в отзыве?
-                                </div>
-                                <div class="form__controls-btns clearfix">
-                                    <div class="form__controls-left">
-                                    <label class="form__radio">
-                                        <input type="radio" name="review" class="form__radio-elem" checked>
-                                        <div class="form__radio-fake"></div>
-                                        <div class="form__radio-text">Да</div>
-                                    </label>
-                                    <label class="form__radio">
-                                        <input type="radio" name="review" class="form__radio-elem">
-                                        <div class="form__radio-fake"></div>
-                                        <div class="form__radio-text">Нет</div>
-                                    </label>
+                                    <div class="form__controls-btns clearfix">
+                                        <div class="form__controls-left">
+                                            <div class="form__controls-title">
+                                                Отображать фото в отзыве?
+                                            </div>
+                                            <label class="form__radio">
+                                                <input type="radio" name="review" class="form__radio-elem" checked>
+                                                <div class="form__radio-fake"></div>
+                                                <div class="form__radio-text">Да</div>
+                                            </label>
+                                            <label class="form__radio">
+                                                <input type="radio" name="review" class="form__radio-elem">
+                                                <div class="form__radio-fake"></div>
+                                                <div class="form__radio-text">Нет</div>
+                                            </label>
+                                        </div>
+                                        <div class="form__controls-right">
+                                        <input type="submit" value="Отправить" class="form__submit">
+                                        </div>
                                     </div>
-                                    <div class="form__controls-right">
-                                    <input type="submit" value="Отправить" class="form__submit">
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                         </form>
@@ -226,10 +234,10 @@
     <footer class="footer">
             <!--conteiner центрируем содержание-->
         <div class="conteiner clearfix">
-            <div class="author">
+            <div class="footer-author">
                     Сделано с любовью и старанием<br>
-                    на курсе «HTML + CSS» в <a class="footer__author-school" href="#">LoftSchool</a>.<br>
-                    Автор работы: <a class="footer__author-link" href="#">Прохладов Вадим</a>
+                    на курсе «HTML + CSS» в <a class="footer-author__school" href="https://loftschool.com/">LoftSchool</a>.<br>
+                    Автор работы: <a class="footer-author__link" href="#">Дмитрий Бермитти</a>
             </div>
             <div class="footer-logo">
                 <a href="index.html">
@@ -237,31 +245,31 @@
                 </a> 
             </div>
             <div class="social">
-                    <div class="social-text">Наши социальные сети</div>
-                    <ul class="social-list">
-                        <li class="social-item">
-                            <a class="social-link" href="#">
-                                <img src="img\icons\vk.png" alt="ВК">
+                    <div class="social__text">Наши социальные сети</div>
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="img\icons\vk.png" alt="ВК">
                             </a>
                         </li>
-                        <li class="social-item">
-                            <a class="social-link" href="#">
-                                <img src="img\icons\fasebook.png" alt="facebook">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="img\icons\fasebook.png" alt="facebook">
                             </a>
                         </li>
-                        <li class="social-item">
-                            <a class="social-link" href="#">
-                                <img src="img\icons\google.png" alt="Google+">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="img\icons\google.png" alt="Google+">
                             </a>
                         </li>
-                        <li class="social-item">
-                            <a class="social-link" href="#">
-                                <img src="img\icons\tweeter.png" alt="twitter">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="img\icons\tweeter.png" alt="twitter">
                             </a>
                         </li>
-                        <li class="social-item">
-                            <a class="social-link" href="#">
-                                <img src="img\icons\mail.png" alt="e-mail:">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <img class="social__img" src="img\icons\mail.png" alt="e-mail:">
                             </a>
                         </li>
                     </ul>

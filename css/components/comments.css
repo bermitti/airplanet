@@ -6,11 +6,24 @@
 .comments__list{
     list-style: none;
 }
+.comments__date{
+  font-size: 14px;
+  line-height: 21px;
+}
+
 /*отступы между датой и отзывом*/
 .comments__name{
-    padding-top: 10px;
-    padding-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
 }
+.comments__text:{
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .comments{
     width: 880px;
 }
@@ -18,7 +31,9 @@
 /*блок отзывов*/
 .comments__item{
     font-size: 0;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #f5f5f5;
 }
 /*фото отзыва*/
 .comments__photo{
@@ -51,17 +66,18 @@
 }
 .nav-page__item{
     display: inline-block;
+    height: 25px;
+    width: 25px;
+    text-align: center;
 }
 .nav-page__item:first-child{
     background-image: url(../../img/icons/RoundedRectangle2.png);
 }
 .nav-page__link{
     text-decoration: none;
-    display: inline-block;
+    display: block;
     color: black;
-    height: 25px;
-    width: 25px;
-    text-align: center;
+    line-height: 1.5;
 }
 .nav-page__list:before{
     content: "<";
@@ -121,10 +137,12 @@
 
 .form__input-text::-webkit-input-placeholder {
   color:#221f1f;
+  opacity: .5;
 }
 
 .form__input-text::-moz-placeholder {
   color:#221f1f;
+  opacity: .5;
 }
 
 .form__input-text:focus {
@@ -140,14 +158,23 @@
   padding: 10px;
   resize: none;
   font-size: 14px;
+  border-top: 1px solid #1c5bc3;
+  border-bottom: 1px solid #1c5bc3;
 }
-
+.form__controls-title{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+}
+.form__radio{
+  display: inline-block;
+  margin-right: 10px;
+}
 .form__radio-elem {
   display: inline-block;
   vertical-align: middle;
   display: none;
 }
-
 .form__radio-elem:checked+.form__radio-fake {
   border: 1px solid #1c5bc3;
 }
@@ -165,6 +192,7 @@
   width: 20px;
   height: 20px;
   display: inline-block;
+  vertical-align: middle; /*	form__controls-left - выровнять элементы по вертикале*/
   border-radius: 50%;
   border: 1px solid #cbcbcb;
   position: relative;
@@ -194,8 +222,30 @@
 .form__controls-left, .form__controls-right {
   float: left;
   width: 50%;
+  position: relative;
 }
 
 .form__submit {
+  border-radius: 3px;
+  background: #27273e;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
   display: inline-block;
+  padding: 15px 40px 17px 20px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  position: relative;
+}
+.form__submit:hover {
+  background: #1c5bc3;
+}
+.form__controls-right:after {
+  content: url(../../img/content/form_bottom.png);
+  position: absolute;
+  /* background-color: red; учебный цвет */
+  top: 14px;
+  left: 130px;
 }

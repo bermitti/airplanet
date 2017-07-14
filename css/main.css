@@ -55,24 +55,19 @@ footer{
     margin-top: -77px;
 }
 
-/*Задаём белый цвет ссылкам*/
-.footer__author-school,
-.footer__author-link{
-    color: white;
-}
-
 /*оформление header*/
 .header {
     background-color: #1c5bc3;
-    padding: 20px 20px;
+    padding: 15px 20px;
     height: 77px;
 }
 /*логотип в шапке*/
 .logo{
-    display: block;
+    display: inline-block;
     width: 120px;
     height: 36px;
     float: left;
+    margin-top: 5px;
 }
 /*контакты в шапке*/
 .contacts{
@@ -94,10 +89,65 @@ footer{
     border-bottom: 1px solid white;
 }
 
+/* выпадашка */
+.contacts__elem {
+  position: relative;
+}
+.contacts__elem:hover .contacts__dropdown {
+  display: block;
+}
+.contacts__dropdown {
+  padding: 10px 15px;
+  box-shadow: 0px 0px 10px 0px rgba(23, 59, 117, 0.55);
+  background: #fff;
+  border-radius: 5px 0 5px 5px;
+  text-align: left;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1000;
+  margin-top: 13px;
+  display: none;
+}
+.contacts__dropdown:before {
+  content: "";
+  display: block;
+  border: 11px solid transparent;
+  border-top-width: 0;
+  border-bottom-color: #fff;
+  position: absolute;
+  top: -11px;
+  right: 0;
+}
+
+.contacts__dropdown:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 25px;
+  left: 0;
+  right: 0;
+  top: -25px;
+}
+
+.contacts__time {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1c5bc3;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contacts__lunch {
+  font-size: 14px;
+  color: #221f1f;
+}
+
 /*сайдбар, боковая панель навигации*/
 .sidebar{
     float: left;
     width: 180px;
+    padding-top: 25px;
 }
 .nav-menu{
     list-style: none; /* Убираем маркеры */
@@ -105,11 +155,18 @@ footer{
     margin: 0;
 }
 .nav-menu__item{
-    margin-top: 30px; 
+    /* margin-top: 30px;  */
     font-size: 0; /*обнуляем отступы для inline-block*/
 }
 .nav-menu__link{
     display: inline-block; /* обернули весь элемент в ссылку */
+}
+.nav-menu__link:hover{
+    font-style: italic;
+}
+/* для активного элемента меняет курсор */
+.nav-menu__active{
+    cursor: default;
 }
 .nav-menu__icon{
     display: inline-block; /* Строчно-блочный элемент */
@@ -119,7 +176,9 @@ footer{
 }
 .nav-menu__text{
     display: inline-block; /* Строчно-блочный элемент */ 
+    font-weight: 700; /*определяем шрифт */
     font-size: 12px; /*возвращаем шрифт после обнуления inline-block*/
+    line-height: 54px;
     text-transform: uppercase; /*делаем шрифт прописным*/
     vertical-align: middle;/* Выравнивание по средней линии родителя */
     margin-left: 16px;
@@ -127,7 +186,8 @@ footer{
 }
 
 div.nav-menu__home{
-    color: #221f1f; /* Переопределили цвет для Главная */ 
+    color: #221f1f;   /* Переопределили цвет для текущей страницы */ 
+    font-style: normal; /* Переопределили шрифт при наведении */ 
 }
 
 .main-content{
@@ -137,37 +197,52 @@ div.nav-menu__home{
 
 /*footer*/
 
-.author{
+.footer-author{
     float: left;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     margin-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
     color: white;
     width: 270px;
 }
+/*Задаём белый цвет ссылкам*/
+.footer-author__school,
+.footer-author__link{
+    color: white;
+}
+
 /*центровка логотипа в footer*/
 .footer-logo{
     float: left;
     width: 120px;
     margin-left: 200px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 .social{
     float: right;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 15px;
+    /* margin-right: 20px; */
+    font-size: 14px;
+    line-height: 18px;    
     color: white;
-    width: 180px;
+    /* width: 180px; */
 }
 
-.social-list{
+.social__list{
     list-style-type: none; /* Убираем маркеры */
-    padding-left: 0;
-    margin-top: 3px; 
+    margin-top: 5px;  
 }
-.social-item{
+.social__item{
    display: inline; /* Отображать как строчный элемент */
-   padding-right: 8px;
+   padding-right: 5px;
 }
-.social-link{
+.social__img{
+    opacity: 0.5;
+}
+.social__img:hover{
+    opacity: 1;
+}
+.social__link{
     display: inline-block; /* обернули весь элемент в ссылку */
 }

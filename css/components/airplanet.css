@@ -1,9 +1,5 @@
 
 
-/*Задаём белый цвет ссылкам*/
-.main-content__order{
-    color: white;
-}
 
 /*текст на картинке на основной странице*/
 .page-image{
@@ -11,60 +7,96 @@
 }
 .page-image__text{
     position: absolute; /* Абсолютное позиционирование */
-    top: 162px; /* Положение от верхнего края */
-    left: 70px; /* Положение от левого края */
+    top: 115px; /* Положение от верхнего края */
+    left: 62px; /* Положение от левого края */
     font-weight: 700;
+    font-size: 25px;
 }
 
 /*оформление текста на странице*/
 .page-text{
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 18px;
     width: 700px;
+    padding-top: 20px;
 }
 .page-text__bold{
     font-weight: 700;
 }
 .page-text p{
-    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    /* padding-top: 5px; */
+    /* padding-bottom: 5px; */
+    margin-bottom: 15px;
 }
 .page-text ul{
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: -8px;
     margin-left: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
-
+.page-text li{
+    margin-top: 5px;
+}
 
 /*ширина блока с учётом padding, вариант - box-sizing: border-box */
 .description{
     background-color: #1c5bc3;
     height: 116px;
     width: 700px;
+    font-size: 18px;
+    line-height: 30px;
     color: white;
-    padding-top: 20px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 30px;
     padding-right: 70px;
 }
+/*Задаём белый цвет ссылкам*/
+.main-content__order{
+    color: white;
+}
+.main-content__phone{
+    color: white;
+    text-decoration: none;
+}
 .partners{
-    height: 420px;
+    /* height: 420px; */
     width: 700px;
 }
-.partners-title{
-    margin-top: 72px;
+.partners__title{
+    margin-top: 70px;
+    font-size: 49px;
+    line-height: 38px;
 }
-.partners-list{
+.partners__list{
     list-style-type: none; /* Убираем маркеры */ 
     text-align: left;
+    margin-top: 45px;
     padding: 0; 
 }
-.partners-item{
-    /*float: left;*/
+.partners__item{
     width: 168px; /* Задание ширины логотипа партнёра */ 
     margin-right: 93px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+    padding-bottom: 65px;
     display: inline-block; /* Строчно-блочный элемент */ 
     vertical-align: middle;/* Выравнивание по средней линии родителя */
     text-align: center;
+    filter: grayscale(100%); /* фильтр - меняем изображение на чёрно-белое */ 
+    -webkit-filter: grayscale(100%); /* фильтр - меняем изображение на чёрно-белое */
+}
+/* при наведении возвращаем цветное изображение */
+.partners__item:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0); 
 }
 
-.partners-list li:nth-child(3n){
+.partners__list li:nth-child(3n){
     margin-right: 0; /* убираем отступ у каждого 3-его логотипа партнёра */ 
 }
 

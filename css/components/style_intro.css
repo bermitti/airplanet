@@ -2,16 +2,32 @@
 
 .wrapper{
     background: url(../../img/bg/kzhhnb6xsqi-margo-brodowicz.png) no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    position: relative;
 }
+
+.wrapper_intro{
+    min-width: initial;
+}
+
 .intro-logo{
-    display: block;
+    /*display: block;
     margin-left: 494px;
-    margin-top: 189px; 
+    margin-top: 189px; */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -98%);
+
 }
 
 .intro-button{
-    display: inline-block;
+    /*display: inline-block;
     margin-left: 448px;
-    margin-top: 42px;
+    margin-top: 42px;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 130%);
 }
